@@ -1,3 +1,6 @@
+const path = require(`path`)
+
+
 module.exports = {
   siteMetadata: {
     title: `Heart of Texas Pet Loss and Grief Support Group`,
@@ -10,7 +13,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: path.join(__dirname, `src`, `images`),
       },
     },
     `gatsby-transformer-sharp`,
@@ -21,8 +24,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#6495ED`,
+        theme_color: `#6495ED`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },

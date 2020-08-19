@@ -8,10 +8,18 @@ const LinksPage = () => (
   <Layout>
     <SEO title="Links Page" />
     <h1>Who Are We</h1>
-    <p>PAWs Shelter of Central Texas - https://pawsshelter.org/ </p>
-    <p>Lizzy’s Animal Hospice - https://lizzyshospice.com/ </p>
-    <p>Sweetheart Pet Services - https://www.sweetheartpetservices.com/ </p>
-    <p>with grateful appreciation for her time and knowledge <br></br>- Coleen Ellis and Two Hearts Pet Loss Center - https://twoheartspetlosscenter.com/</p>
+    <p>PAWs Shelter of Central Texas -
+      <a href='https://pawsshelter.org/' target="_blank"> https://pawsshelter.org/ </a>
+    </p>
+    <p>Lizzy’s Animal Hospice -  
+      <a href='https://lizzyshospice.com/' target="_blank"> https://lizzyshospice.com/ </a>
+    </p>
+    <p>Sweetheart Pet Services -  
+      <a href='https://www.sweetheartpetservices.com/' target="_blank"> https://www.sweetheartpetservices.com/ </a>
+    </p>
+    <p>with grateful appreciation for her time and knowledge <br></br> Coleen Ellis and Two Hearts Pet Loss Center - 
+    <a href='https://twoheartspetlosscenter.com/' target="_blank"> https://twoheartspetlosscenter.com/ </a>
+</p>
   </Layout>
 )
 

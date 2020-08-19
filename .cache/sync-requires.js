@@ -9,6 +9,7 @@ exports.components = {
   "component---src-pages-404-js": hot(preferDefault(require("/Users/melanie/Desktop/Development/petgrief.github.io/src/pages/404.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/melanie/Desktop/Development/petgrief.github.io/src/pages/index.js"))),
   "component---src-pages-links-js": hot(preferDefault(require("/Users/melanie/Desktop/Development/petgrief.github.io/src/pages/links.js"))),
-  "component---src-pages-memorial-js": hot(preferDefault(require("/Users/melanie/Desktop/Development/petgrief.github.io/src/pages/memorial.js")))
+  "component---src-pages-memorial-js": hot(preferDefault(require("/Users/melanie/Desktop/Development/petgrief.github.io/src/pages/memorial.js"))),
+  "component---src-pages-register-js": hot(preferDefault(require("/Users/melanie/Desktop/Development/petgrief.github.io/src/pages/register.js")))
 }
 
