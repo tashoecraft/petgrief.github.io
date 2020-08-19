@@ -35,9 +35,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © Heart of Texas Pet Loss and Grief Support Group {new Date().getFullYear()}
         </footer>
       </div>
     </>

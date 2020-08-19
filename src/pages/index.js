@@ -8,10 +8,8 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Monthly Meeting - 
-
-Second Sunday of the month at PAWs Shelter of Central Texas - DRIPPING SPRINGS CAMPUS:
+    <h1>Monthly Meeting</h1>
+    <p>Second Sunday of the month at PAWs Shelter of Central Texas - DRIPPING SPRINGS CAMPUS:
 
 2965 FM 165, Dripping Springs, Texas 78620
 
@@ -20,7 +18,7 @@ Second Sunday of the month at PAWs Shelter of Central Texas - DRIPPING SPRINGS C
 Group meets for approximately 1.5 hours
 
 
-
+</p><p>
 Due to COVID-19 There will be both an In-Person option and a ZOOM Meeting option.
 
 All interested persons should register to confirm - (you put in some way of registering - via email?)
@@ -36,13 +34,13 @@ Zoom participants will be sent link
 All participants are requested to arrive on time.
 
 
-
+</p><p>
 Group is open to anyone grieving the loss of a beloved pet - whether a recent loss or not.
 
 All are welcome to join, and while the group is free, we gratefully accept donations to PAWS Shelter of Central Texas (link to donation page - https://pawsshelter.org/donate/)
 
 
-
+</p><p>
 Group will be hosted by one or more of the following Facilitators:
 
 Jyl Hershman-Ross - Companion Animal TTouch Practitioner L2; Trainer and Behavior Consultant CPDT-KA
@@ -57,14 +55,11 @@ In Person attendees will receive Agendas and a Grief Loss Journal to keep.
 
 Zoom attendees will receive the agenda by email.  Journals are only available on site at this time.
 
-
-
-</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+<div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <Link to="/links/">Go to links</Link> <br />
-    <Link to="/memorial/">Go to memorial</Link> <br />
+
+</p>
   </Layout>
 )
 

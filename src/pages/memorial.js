@@ -7,9 +7,8 @@ import SEO from "../components/seo"
 const MemorialPage = () => (
   <Layout>
     <SEO title="Memorial Page" />
-    <h1>Hi from the second page</h1>
-    <p> Memorial Page </p>
-    <Link to="/">Go back to the homepage</Link>
+    <h1>Pet Memorial</h1>
+    <p> Check back soon for completed page</p>
   </Layout>
 )
 
