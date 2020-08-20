@@ -8,7 +8,7 @@ const RegisterPage = () => (
     <SEO title="Registration Page" />
     <h1>Please fill out the following</h1>
     
-<form action="mailto:info@sweetheartpetservices.com?subject = Monthly Meeting Interest" method="post" enctype="text/plain" style={{border: '5px double black'}}>
+<form action="mailto:jyl@pawsshelter.org" method="post" enctype="text/plain" style={{border: '5px double black'}}>
       <div>
       <br/>
         <label for="name">Name:

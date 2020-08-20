@@ -29,8 +29,11 @@ const Header = ({ siteTitle }) => (
                     <Image />
         </Link>
         </p>
-                  <h1 style={{color: 'black'}}>
-              Heart of Texas Pet Loss & Grief Support</h1>
+        {window.matchMedia("(min-width: 700px)") &&
+
+<h1 style={{color: 'black', fontSize:"4vw"}}>
+Heart of Texas Pet Loss & Grief Support</h1>
+        }
     </div>
     <div 
       style={{
