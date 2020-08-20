@@ -16,7 +16,7 @@ const IndexPage = () => (
     <p>
 Due to COVID-19 There will be both an In-Person option and a ZOOM Meeting option.
 
-All interested persons should register to confirm - 
+All interested persons must register to confirm - 
 <Link to="/guidelines/">Please register here</Link> 
 </p><p>
 
