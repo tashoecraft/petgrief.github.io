@@ -12,16 +12,13 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center'
       }}
     >
-      <Link to="/links/">Who We Are</Link>
-      <p>
+            <p>
         <Link
           to="/"
           style={{
@@ -29,13 +26,22 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-        <div>
-          <Image />
-        </div>
+                    <Image />
         </Link>
         </p>
-        <Link to="/memorial/">Pet Memorial</Link> <br />
+                  <h1 style={{color: 'black'}}>
+              Heart of Texas Pet Loss & Grief Support</h1>
     </div>
+    <div 
+      style={{
+        display: 'flex',
+        justifyContent: 'space-around'
+      }}>
+        <div><Link to="/">Home</Link></div>
+        <div><Link to="/links/">Who We Are</Link></div>
+        <div><Link to="/memorial/">Pet Memorial</Link></div>
+        <div><Link to="/contact/">Contact</Link></div>
+        </div>
   </header>
 )
 

@@ -17,7 +17,7 @@ const IndexPage = () => (
 Due to COVID-19 There will be both an In-Person option and a ZOOM Meeting option.
 
 All interested persons should register to confirm - 
-<Link to="/register/">Please register here</Link> 
+<Link to="/guidelines/">Please register here</Link> 
 </p><p>
 
 <b>In-Person space is limited. </b>
@@ -42,7 +42,7 @@ Group will be hosted by one or more of the following Facilitators:
 <ul>
   <li>Jyl Hershman-Ross - Companion Animal TTouch Practitioner L2; Trainer and Behavior Consultant CPDT-KA
 </li>
-  <li>Becky Davis - (i need to get her title and how she wants to be represented - Therapist?, CA TTouch Practitioner L1)
+  <li>Becky Davis - Licensed Professional Counselor in private practice, as well as a TTouch CA-L1 practitioner. 
 </li>
   <li>Karen Cole - Founder of Lizzy’s Animal Hospice
 </li>

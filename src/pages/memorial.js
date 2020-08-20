@@ -8,7 +8,7 @@ const MemorialPage = () => (
   <Layout>
     <SEO title="Memorial Page" />
     <h1>Pet Memorial</h1>
-    <p> Check back soon for completed page</p>
+    <p> This page will be devoted to your pets.  Check back soon for more details.</p>
   </Layout>
 )
 

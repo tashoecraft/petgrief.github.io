@@ -34,10 +34,20 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+
+      </div>      
+      <footer style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `0 1.0875rem 1.45rem`,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
+      >
           © Heart of Texas Pet Loss and Grief Support Group {new Date().getFullYear()}
+          <a href='https://melaniehublardhershman.com' target="_blank">website by Melanie Hublard Hershman</a>
         </footer>
-      </div>
     </>
   )
 }
