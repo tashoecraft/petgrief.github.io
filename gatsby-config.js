@@ -30,5 +30,20 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: "AIzaSyD2e8VJNsAOnbbBd1p8EzEKA5ibwQC0iYA",
+          authDomain: "heartoftexaspetgrief.firebaseapp.com",
+          databaseURL: "https://heartoftexaspetgrief.firebaseio.com",
+          projectId: "heartoftexaspetgrief",
+          storageBucket: "heartoftexaspetgrief.appspot.com",
+          messagingSenderId: "670102399058",
+          appId: "1:670102399058:web:58a419c4a38e77b83a178b",
+          measurementId: "G-9VFKFFEVMR"
+        }
+      }
+    }
   ],
 }

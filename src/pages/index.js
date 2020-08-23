@@ -39,6 +39,7 @@ to PAWS Shelter of Central Texas
 
 </p><p>
 Group will be hosted by one or more of the following Facilitators:
+</p>
 <ul>
   <li>Jyl Hershman-Ross - Companion Animal TTouch Practitioner L2; Trainer and Behavior Consultant CPDT-KA
 </li>
@@ -47,7 +48,7 @@ Group will be hosted by one or more of the following Facilitators:
   <li>Karen Cole - Founder of Lizzy’s Animal Hospice
 </li>
 </ul>
-</p><p>
+<p>
 In Person attendees will receive Agendas and a Grief Loss Journal to keep.
 
 Zoom attendees will receive the agenda by email.  Journals are only available on site at this time.

@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
         justifyContent: 'center'
       }}
     >
-            <p>
+            <div>
         <Link
           to="/"
           style={{
@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => (
         >
                     <Image />
         </Link>
-        </p>
+        </div>
 <h1 style={{color: 'black', fontSize:"3vw"}}>
 Heart of Texas Pet Loss & Grief Support</h1>
     </div>
