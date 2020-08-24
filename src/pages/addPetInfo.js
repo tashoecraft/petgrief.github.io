@@ -3,7 +3,11 @@ import firebase from "gatsby-plugin-firebase";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import 'firebase/database';
+import 'firebase/storage';
+
 const database = firebase.database();
+const storageService = firebase.storage();
+const storageRef = storageService.ref();
 
 function writePetData(email, name, bio, imageUrl) {
   database().ref('/pets' + email + name).set({
@@ -14,35 +18,46 @@ function writePetData(email, name, bio, imageUrl) {
   });
 }
 
-function getPetData(){
-  return database().ref('/').once
-};
+function handleFormSubmit() {
+    // const uploadTask = storageRef.child(`images/${selectedFile.name}`).put(selectedFile); //create a child directory called images, and place the file inside this directory
+    // uploadTask.on('state_changed', (snapshot) => {
+    // // Observe state change events such as progress, pause, and resume
+    // }, (error) => {
+    //   console.log(error);
+    // }, () => {
+    //    console.log('success');
+    // });
+    console.log('success')
+  }
 
 const AddPetInfoPage = () => (
   <Layout>
     <SEO title="Add Pet Info Page" />
     <h1>Please fill out the following information.</h1>
-    <form action="mailto:jyl@pawsshelter.org" method="post" enctype="text/plain" style={{border: '5px double black'}}>
+    <form action={handleFormSubmit} style={{border: '5px double black'}}>
       <div>
       <br/>
-        <label for="name">Name:
-          <input type="text" name="name" id="name" />
+        <label htmlFor="petName">Pet Name:
+          <input type="text" className="name" id="name" />
         </label><br/><br/>
-        <label for="email">  Email:
-          <input type="text" name="email" id="email" />
+        <label htmlFor="owner">Owner:
+          <input type="text" className="owner" id="owner" />
+        </label><br/><br/>
+        <label htmlFor="email">  Email:
+          <input type="text" className="email" id="email" />
         </label> <br/><br/>
-        <label for="meeting">Meeting: <br/>
-          <input type="checkbox" name="InPerson" id="InPerson" />
-          <label for="InPerson"> In Person</label><br/>
-          <input type="checkbox" name="Zoom" id="Zoom" />
-          <label for="Zoom"> Zoom</label><br/>
-          <input type="checkbox" name="MoreInformation" id="MoreInformation" />
-          <label for="MoreInformation"> I'd like more information</label><br/>
-        </label>
+        <label htmlFor="tribute">  Tribute:
+        <textarea className="tribute" rows="4" cols="50" />
+        </label> <br/><br/>
       </div>
+      <div id="filesubmit">
+      <label htmlFor="image">  Image:
+        <input type="file" className="file-select" accept="image/*"/>
+    </label>
+    </div>
       <div>
       <br/>
-        <input type="submit" name="submit" value="Send" />
+        <input type="submit" name="submit" value="Submit" />
         <input type="reset" name="reset" value="Clear Form" />
       </div>
     </form>

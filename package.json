@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@firebase/database": "^0.6.11",
+    "@firebase/storage": "^0.3.42",
     "firebase": "^7.19.0",
     "gatsby": "^2.24.41",
     "gatsby-cli": "^2.12.87",

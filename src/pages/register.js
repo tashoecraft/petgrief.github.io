@@ -11,19 +11,22 @@ const RegisterPage = () => (
 <form action="mailto:jyl@pawsshelter.org" method="post" enctype="text/plain" style={{border: '5px double black'}}>
       <div>
       <br/>
-        <label for="name">Name:
-          <input type="text" name="name" id="name" />
+        <label htmlFor="firstName">First Name:
+          <input type="text" className="firstName" id="firstName" />
         </label><br/><br/>
-        <label for="email">  Email:
-          <input type="text" name="email" id="email" />
+        <label htmlFor="lastName">Last Name:
+          <input type="text" className="lastName" id="lastName" />
+        </label><br/><br/>
+        <label htmlFor="email">Email:
+          <input type="text" className="email" id="email" />
         </label> <br/><br/>
-        <label for="meeting">Meeting: <br/>
-          <input type="checkbox" name="InPerson" id="InPerson" />
-          <label for="InPerson"> In Person</label><br/>
-          <input type="checkbox" name="Zoom" id="Zoom" />
-          <label for="Zoom"> Zoom</label><br/>
-          <input type="checkbox" name="MoreInformation" id="MoreInformation" />
-          <label for="MoreInformation"> I'd like more information</label><br/>
+        <label htmlFor="meeting">Meeting: <br/>
+          <input type="checkbox" className="InPerson" id="InPerson" />
+          <label htmlFor="InPerson"> In Person</label><br/>
+          <input type="checkbox" className="Zoom" id="Zoom" />
+          <label htmlFor="Zoom"> Zoom</label><br/>
+          <input type="checkbox" className="MoreInformation" id="MoreInformation" />
+          <label htmlFor="MoreInformation"> I'd like more information</label><br/>
         </label>
       </div>
       <div>
