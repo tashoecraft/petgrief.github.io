@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{"Cuy+":function(e,t,a){"use strict";a.r(t);var l=a("q1tI"),n=a.n(l),r=a("Bl7J"),c=a("vrFN");t.default=function(){return n.a.createElement(r.a,null,n.a.createElement(c.a,{title:"Contact Page"}),n.a.createElement("h1",null,"Contact"),n.a.createElement("p",null,"Please feel free to reach out at: ",n.a.createElement("a",{href:"mailto:jyl@pawsshelter.org"},"jyl@pawsshelter.org")))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-326ad43e48de8a9c9246.js.map
