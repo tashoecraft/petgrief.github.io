@@ -14,10 +14,6 @@ function writePetData(email, name, bio, imageUrl) {
   });
 }
 
-function getPetData(){
-  return database().ref('/').once
-};
-
 const AddToMemorialPage = () => (
   <Layout>
     <SEO title="Add To Memorial Page" />
