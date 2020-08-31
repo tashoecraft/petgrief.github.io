@@ -5,6 +5,7 @@ const preferDefault = m => (m && m.default) || m
 
 
 exports.components = {
+  "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/melanie/Desktop/Development/petgrief.github.io/.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(require("/Users/melanie/Desktop/Development/petgrief.github.io/src/pages/404.js"))),
   "component---src-pages-add-pet-info-js": hot(preferDefault(require("/Users/melanie/Desktop/Development/petgrief.github.io/src/pages/addPetInfo.js"))),
   "component---src-pages-add-to-memorial-js": hot(preferDefault(require("/Users/melanie/Desktop/Development/petgrief.github.io/src/pages/addToMemorial.js"))),

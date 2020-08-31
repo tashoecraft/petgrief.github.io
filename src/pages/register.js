@@ -11,28 +11,28 @@ const RegisterPage = () => (
 <form action="mailto:jyl@pawsshelter.org" method="post" enctype="text/plain" style={{border: '5px double black', padding: '10px'}}>
       <div>
       <br/>
-        <label htmlFor="firstName">First Name:
+        <label for="firstName">First Name:
           <div>
-            <input type="text" className="firstName" id="firstName" />
+            <input type="text" name="First_name" id="firstName" required/>
           </div>
         </label>
-        <label htmlFor="lastName">Last Name:
+        <label for="lastName">Last Name:
           <div>
-            <input type="text" className="lastName" id="lastName" />
+            <input type="text" name="Last_name" id="lastName" required/>
           </div>
         </label>
-        <label htmlFor="email">Email:
+        <label for="email">Email:
           <div>
-            <input type="text" className="email" id="email" />
+            <input type="text" name="Email" id="email" required/>
           </div>
         </label>
-        <label htmlFor="meeting">Meeting: <br/>
-          <input type="checkbox" className="InPerson" id="InPerson" />
-          <label htmlFor="InPerson"> In Person</label><br/>
-          <input type="checkbox" className="Zoom" id="Zoom" />
-          <label htmlFor="Zoom"> Zoom</label><br/>
-          <input type="checkbox" className="MoreInformation" id="MoreInformation" />
-          <label htmlFor="MoreInformation"> I'd like more information</label><br/>
+        <label for="meeting">Meeting: <br/>
+          <input type="checkbox" name="In_person" id="InPerson" />
+          <label for="InPerson"> In Person</label><br/>
+          <input type="checkbox" name="Zoom" id="Zoom" />
+          <label for="Zoom"> Zoom</label><br/>
+          <input type="checkbox" name="More_information" id="MoreInformation" />
+          <label for="MoreInformation"> I'd like more information</label><br/>
         </label>
       </div>
       <div>
