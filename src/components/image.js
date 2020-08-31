@@ -19,14 +19,14 @@ const Image = () => {
       placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
         childImageSharp {
           fixed(width: 280, height: 185, quality: 90) {
-            ...GatsbyImageSharpFixed_noBase64
+            ...GatsbyImageSharpFixed
           }
         }
       }
     }
   `)
 
-  return <Img loading="eager" style={{marginBottom: 0}} fixed={data.placeholderImage.childImageSharp.fixed} />
+  return <Img loading="eager" placeholderStyle={{ visibility: "hidden" }} style={{marginBottom: 0}} fixed={data.placeholderImage.childImageSharp.fixed} />
 }
 
 export default Image
