@@ -1,25 +1,35 @@
-import React from "react"
-import firebase from "gatsby-plugin-firebase";
+import React, {useState} from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 
-const database = firebase.database();
 
-function writePetData(email, name, bio, imageUrl) {
-  database().ref('/pets' + email + name).set({
-    userEmail: email,
-    petName: name,
-    petBio: bio,
-    petImageURL : imageUrl
-  });
+
+function AddToMemorialPage() {
+const [isDisabled, setIsDisabled] = useState()
+const onClick = () =>{
+    // setIsDisabled(false)
 }
 
-const AddToMemorialPage = () => (
+return (
   <Layout>
     <SEO title="Add To Memorial Page" />
-    <h1>Pet Memorial</h1>
-    <p> This page will be devoted to your pets.  Check back soon for more details.</p>
+    <h1>Add To Memorial</h1>
+    <div>
+        <h4>Please make a donation of $25.00 to PAWS Shelter of Central Texas as payment for addition to the memorial.</h4>
+        <a class="button is-large" href='https://pawsshelter.org/donate/' target="_blank" onclick={onClick()}>
+            <span>Pay Here</span>
+        </a>
+    </div>
+    <br />
+    <div>
+        <h4>Once you've made a donation, click the following link to add information to the memorial.</h4>
+        <a href="/addPetInfo/" class='button is-large is-outlined is-focused' disabled={isDisabled}>
+            <span>Add Pet Info</span>
+        </a>
+    </div>
   </Layout>
-)
+    )
+}
 
 export default AddToMemorialPage

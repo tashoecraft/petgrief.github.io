@@ -106,7 +106,7 @@ return (
         </label>
         <label htmlFor="tribute">  Tribute:
           <div>
-            <textarea className="tribute" rows="4" cols="50" value={bio} onChange={handleBioChange} required/>
+            <textarea maxlength='1330' className="tribute" rows="4" cols="40" value={bio} onChange={handleBioChange} required/>
           </div>
         </label>
       </div>

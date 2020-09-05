@@ -4,47 +4,42 @@ import React from "react"
 import Image from "./image"
 
 const Header = ({ siteTitle }) => (
-  <header
+<header
     style={{
       background: `FloralWhite`,
       marginBottom: `1.45rem`,
-      borderBottomRightRadius: '25px',
-      borderBottomLeftRadius: '25px',
+      borderBottomRightRadius: '20px',
+      borderBottomLeftRadius: '20px',
     }}
   >
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center'
-      }}
-    >
-            <div>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-                    <Image />
-        </Link>
-        </div>
-<h1 style={{color: 'black', fontSize:"3vw"}}>
-Heart of Texas Pet Loss & Grief Support</h1>
+  <nav style={{display: 'flex', flexDirection: 'column'}} role="navigation" aria-label="main navigation">
+    <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}} >
+      <Link
+          className="navbar-item"
+            to="/"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+              height: '182px',
+              width: '273px'
+            }}
+          >
+                      <Image />
+          </Link>
+            <h1 style={{color:'black', fontSize: '3vw'}}>
+              Heart of Texas Pet Loss & Grief Support
+              </h1>
+      </div>
+    <div>
+      <div style={{display: 'flex', justifyContent: 'space-around'}}>
+          <Link className="navbar-item" to="/">Home</Link>
+          <Link className="navbar-item" to="/links/">Who We Are</Link>
+          <Link className="navbar-item" to="/memorial/">Pet Memorial</Link>
+          <Link className="navbar-item" to="/contact/">Contact</Link>
+      </div>
     </div>
-    <div 
-      style={{
-        display: 'flex',
-        justifyContent: 'space-around'
-      }}>
-        <div><Link to="/">Home</Link></div>
-        <div><Link to="/links/">Who We Are</Link></div>
-        <div><Link to="/memorial/">Pet Memorial</Link></div>
-        <div><Link to="/contact/">Contact</Link></div>
-        </div>
-  </header>
+  </nav>
+</header>
 )
 
 Header.propTypes = {
