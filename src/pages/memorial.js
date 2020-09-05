@@ -14,7 +14,6 @@
 // export default MemorialPage
 
 
-
 import React, {useEffect, useState} from "react"
 import firebase from "gatsby-plugin-firebase";
 import Layout from "../components/layout"
