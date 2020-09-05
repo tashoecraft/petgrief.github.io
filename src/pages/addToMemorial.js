@@ -1,14 +1,12 @@
 import React, {useState} from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
-
-
 
 function AddToMemorialPage() {
-const [isDisabled, setIsDisabled] = useState()
-const onClick = () =>{
-    // setIsDisabled(false)
+const [isDisabled, setIsDisabled] = useState(true)
+
+const clickButton = () =>{
+    setIsDisabled(false)
 }
 
 return (
@@ -17,16 +15,18 @@ return (
     <h1>Add To Memorial</h1>
     <div>
         <h4>Please make a donation of $25.00 to PAWS Shelter of Central Texas as payment for addition to the memorial.</h4>
-        <a class="button is-large" href='https://pawsshelter.org/donate/' target="_blank" onclick={onClick()}>
+        <a className="button is-large is-danger is-light" href='https://pawsshelter.org/donate/' target="_blank" onClick={clickButton}>
             <span>Pay Here</span>
         </a>
     </div>
     <br />
     <div>
         <h4>Once you've made a donation, click the following link to add information to the memorial.</h4>
-        <a href="/addPetInfo/" class='button is-large is-outlined is-focused' disabled={isDisabled}>
+        <form method="get" action="/addPetInfo/">
+        <button className='button is-large is-focused is-success is-light' disabled={isDisabled}>
             <span>Add Pet Info</span>
-        </a>
+        </button>
+        </form>
     </div>
   </Layout>
     )

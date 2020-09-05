@@ -67,8 +67,8 @@ return (
           <div className="card-content">
             <div className="media">
               <div className="media-content">
-                <p class="title is-6">{pets[pet].petName}</p>
-                <p class="subtitle is-6"  style={{marginBottom: 0, fontSize: '.75rem'}}>Owner(s): {pets[pet].owner}</p>
+                <p className="title is-6">{pets[pet].petName}</p>
+                <p className="subtitle is-6"  style={{marginBottom: 0, fontSize: '.75rem'}}>Owner(s): {pets[pet].owner}</p>
               </div>
             </div>
 

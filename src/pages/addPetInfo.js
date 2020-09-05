@@ -19,6 +19,30 @@ const [name, setName] = useState('')
 const [bio, setBio] = useState('')
 const [owner, setOwner] = useState('')
 const [isAdded, setIsAdded] = useState(false)
+const [random1] = useState(Math.floor(Math.random() * 10) + 1)
+const [random2] = useState(Math.floor(Math.random() * 10) + 1)
+const [addStatus, setAddStatus] = useState('')
+const [add, setAdd] = useState('')
+const [isDisabled, setIsDisabled] = useState(true)
+
+
+function addNums(e){
+  e.preventDefault();
+  const sum = random1 + random2;
+	if(add === ''){
+    setAddStatus("Please add the numbers");
+    
+	}else if(add !== sum){
+		setAddStatus("Your math is wrong");
+	}else{
+    setIsDisabled(false)
+		setAddStatus("Correct, it is now safe to submit the form")
+	}
+}
+
+const handleAdd = (e) => {
+  setAdd(Number(e.target.value))
+}
 
 const handleEmailChange = (e) => {
     setEmail(e.target.value)
@@ -86,7 +110,8 @@ return (
           <p>Your pet memorial has been added. Please head to the <Link to="/memorial/">Pet Memorial</Link> page to view.</p>
         </div> 
       }
-    <form name='form' onSubmit={handleFireBaseUpload} style={{border: '5px double black', padding: '10px'}}>
+    <div style={{border: '5px double black', padding: '10px'}}>
+    <form>
       <div>
       <br/>
         <label htmlFor="petName">Pet Name:
@@ -106,7 +131,7 @@ return (
         </label>
         <label htmlFor="tribute">  Tribute:
           <div>
-            <textarea maxlength='1330' className="tribute" rows="4" cols="40" value={bio} onChange={handleBioChange} required/>
+            <textarea maxLength='1330' className="tribute" rows="4" cols="40" value={bio} onChange={handleBioChange} required/>
           </div>
         </label>
       </div>
@@ -117,12 +142,26 @@ return (
         </div>
     </label>
     </div>
-      <div>
+    </form>
+    <form onSubmit={addNums}>
+    <div>
+        <strong>What is the sum of these numbers?</strong>
+          <div>{random1} + {random2}</div>
+          <input type="text" value={add} onChange={handleAdd}/>
+          <input type="submit" name="submit" value="Add Numbers" style={{marginRight: '10px'}}/>
+          {addStatus && 
+            <p>{addStatus}</p>
+            }
+        </div>
+    </form>
+    <form  name='form' onSubmit={handleFireBaseUpload}>
+    <div>
       <br/>
-        <input type="submit" name="submit" value="Submit" style={{marginRight: '10px'}}/>
+        <input type="submit" name="submit" value="Submit" style={{marginRight: '10px'}} disabled={isDisabled}/>
         <input type="reset" name="reset" value="Clear Form" />
       </div>
     </form>
+    </div>
 </Layout>
 )
 }
