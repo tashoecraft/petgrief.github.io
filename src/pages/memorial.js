@@ -60,7 +60,7 @@ return (
         <div className="card">
           <div className="card-image">
             <figure className="image is-4by3" style={{marginBottom: 0}}>
-              <img src={images[pets[pet].petImageURL]} alt={pets[pet].petName} />
+              <img src={images[pets[pet].petImageURL]} alt={pets[pet].petName} style={{objectFit: 'contain'}}/>
             </figure>
           </div>
           <div className="card-content">
