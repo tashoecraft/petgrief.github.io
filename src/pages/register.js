@@ -14,12 +14,12 @@ Heart of Texas Pet Loss Grief Support Group" method="post" enctype="text/plain" 
       <br/>
         <label for="firstName">First Name:
           <div>
-            <input type="text" name="First_name" id="firstName" required/>
+            <input type="text" name="First_Name" id="firstName" required/>
           </div>
         </label>
         <label for="lastName">Last Name:
           <div>
-            <input type="text" name="Last_name" id="lastName" required/>
+            <input type="text" name="Last_Name" id="lastName" required/>
           </div>
         </label>
         <label for="email">Email:
@@ -28,12 +28,18 @@ Heart of Texas Pet Loss Grief Support Group" method="post" enctype="text/plain" 
           </div>
         </label>
         <label for="meeting">Meeting: <br/>
-          <input type="checkbox" name="In_person" id="InPerson" />
+          <input type="checkbox" name="In_Person" id="InPerson" />
           <label for="InPerson"> In Person</label><br/>
           <input type="checkbox" name="Zoom" id="Zoom" />
           <label for="Zoom"> Zoom</label><br/>
-          <input type="checkbox" name="More_information" id="MoreInformation" />
+          <input type="checkbox" name="More_Information" id="MoreInformation" />
           <label for="MoreInformation"> I'd like more information</label><br/>
+        </label>
+        <br />
+        <label for="howDidYouFindOutAboutTheGroup">How did you find out about this group?
+          <div>
+            <input type="text" name="How_did_you_find_out_about_the_group" id="howDidYouFindOutAboutTheGroup" required/>
+          </div>
         </label>
       </div>
       <div>
