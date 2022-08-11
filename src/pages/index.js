@@ -54,6 +54,8 @@ In Person attendees will receive Agendas and a Grief Loss Journal to keep.
 Zoom attendees will receive the agenda by email.  Journals are only available on site at this time.
 
 </p>
+<h1 >Resources</h1>
+<a href='https://www.outsideonline.com/culture/essays-culture/pet-loss-dog-grief/?utm_source=outside&utm_medium=facebook&utm_campaign=onsiteshare&fbclid=IwAR1kJpfimipA3w9ua1vWfuw1WBjDQkMgDMJVNhF9VjZQlVw0RjbPXr79BJU' target="_blank"> How to Grieve for a Very Good Dog </a>.
   </Layout>
 )
 
