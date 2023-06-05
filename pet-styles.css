@@ -1,0 +1,136 @@
+.flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 0 0 1.45rem 0;
+    font-size: 3vw;
+}
+
+header {
+    background: FloralWhite;
+    padding-bottom: 10px;
+}
+
+body {
+    margin: 0;
+    background-color: #87cefa;
+    height: 100vh;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+.navbar-item {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: georgia, serif;
+    font-size: 18px;
+}
+
+.navbar-item:hover {
+    background-color: #fafafa;
+    color: #3273dc;
+}
+
+nav {
+    margin-bottom: 10px;
+}
+
+a:active,
+a:hover {
+    outline-width:0
+}
+
+main {
+    font-family: georgia, serif;
+    font-size: 18px;
+    line-height: 27px
+}
+footer {
+    position: fixed;
+    margin: 0px auto;
+    padding: 0px 1.0875rem 1.45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;"
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.donate-btn {
+    background-color: #fde0e6;
+    border-color: transparent;
+    text-decoration: none;
+    color: #cc0f35;
+    font-size: 1.5rem;
+    border-width: 1px;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(.5em - 1px);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: calc(.5em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    align-items: center;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-top-width: 1px;
+    border-right-color: transparent;
+    border-right-width: 1px;
+    border-bottom-color: transparent;
+    border-bottom-width: 1px;
+    border-left-color: transparent;
+    border-left-width: 1px;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-flex;
+    height: 2.5em;
+    line-height: 1.5;
+    position: relative;
+    vertical-align: top;
+}
+
+.pet-info-btn {
+    border-color: transparent;
+    text-decoration: none;
+    background-color: #effaf3;
+    color: #257942;
+    font-size: 1.5rem;
+    border-width: 1px;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(.5em - 1px);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: calc(.5em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    align-items: center;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-top-width: 1px;
+    border-right-color: transparent;
+    border-right-width: 1px;
+    border-bottom-color: transparent;
+    border-bottom-width: 1px;
+    border-left-color: transparent;
+    border-left-width: 1px;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-flex;
+    height: 2.5em;
+    line-height: 1.5;
+    position: relative;
+    vertical-align: top;
+}
+
+.pet-info-btn.is-success {
+    box-shadow: 0 0 0 .125em rgba(72,199,116,.25);
+}

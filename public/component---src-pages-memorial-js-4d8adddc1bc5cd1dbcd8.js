@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{zqYS:function(e,a,t){"use strict";t.r(a);var n=t("q1tI"),l=t.n(n),r=(t("Wbzz"),t("Bl7J")),c=t("vrFN");a.default=function(){return l.a.createElement(r.a,null,l.a.createElement(c.a,{title:"Memorial Page"}),l.a.createElement("h1",null,"Pet Memorial"),l.a.createElement("p",null," Check back soon for completed page"))}}}]);
-//# sourceMappingURL=component---src-pages-memorial-js-4d8adddc1bc5cd1dbcd8.js.map
